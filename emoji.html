@@ -32,7 +32,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="https/../orbita">Projeto Órbita</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="https/../emoji">Projeto Adicional</a></li>
+            <li><a class="dropdown-item" href="https/../emoji">Projeto com requisitos do cssProjeto Adicional</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="https/../infinito">Projeto Infinito</a></li>
             <li><hr class="dropdown-divider"></li>
@@ -45,12 +45,60 @@
   </div>
 </nav>
     </div>
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8" />
+    <title>Entrada Da Deep web </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="style2.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+<!-- Lista de REGEX comuns: https://digitalfortress.tech/js/top-15-commonly-used-regex/ -->
 
+<!-- Requisitos (interferem na nota de JS):
+    Definir corretamente o tipo de cada campo;
+    Implementar validação via pattern, minlenght, maxlenght onde aplicável (ao menos 3 itens);
+-->
+<form action="#" method="post" id="formcad">
 
-    <div id="corpo" class="d-flex justify-content-center h-100">
+    <h2> ENTRA USUARIO DE MERDA </h2>
+
+    <label for="uid">Usuário:                           </label> 	    <input type="text" name="uid" id="uid" />
+    <label for="ip1">Endereço IP Flutuante:             </label>        <input type="text" name="ip1" id="ip1"/>
+    <label for="pwd">Senha:                             </label>	    <input type="password" min="8" name="pwd" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>       <!-- senha -->
+    <label for="pwd2">Confirmar senha:                  </label>        <input type="password" min="8" name="pwd2" id="pwd2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />     <!-- senha, confirmar via JS -->
+    <label for="cpf">CPF Falso:                         </label>        <input type="text" name="cpf" id="cpf" />       <!-- req. máscara -->
+
+    <label for="clk3">Semana de Entrada:                </label>        <input type="week" name="clk3" id="clk3" />
+    <label for="clk4">Horário de Entrada:               </label>        <input type="time" name="clk4" id="clk4" />
+
+    <label for="rang">Faixa de periculosidade:          </label>        <input type="range" name="rang" id="rang" min="0" max="100"/>
+    <label for="textbox">Texto de Petição de entrada :  </label>        <textarea name="textbox" id="textbox">              </textarea>
+        
+    <label>Seletor de rádio de algo                     </label>
+    <label for="gen">Compra de orgãos                                   <input type="radio" name="gen" value="op1" id="op1"/></label>
+    <label for="gen">Compra de Armas                                    <input type="radio" name="gen" value="op2" id="op2"/></label>  
+    <label for="gen">Outros...(coisas bizarras)                         <input type="radio" name="gen" value="op3" id="op3"/></label> 
     
-    <canvas id="can1" width="600" height="300"></canvas>
-    </div>
-      
+    <label>Seletor Psicopatia:                          </label>
+    <select name="options" id="sel" required>
+        <option value=""  class="select" id="defaultsel" disabled selected>Selecione uma Nivel  </option>
+        <option value="sa" class="select" >Moderado                                             </option>
+        <option value="sb" class="select" >Elevado                                              </option>
+        <option value="sc" class="select" >Super Psicopata                                      </option>
+
+    </select>
+
+    <label for="aa">Recuso Em Explanar meu CEP:</label>                   <input type="checkbox" name="lic" id="lic"/>
+
+    <input type="reset" value="❌ Limpar"/>                 <input type="submit" value="✔️ Enviar"/>
+</form>
+	
 </body>
+
 </html>
+
+
+

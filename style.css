@@ -18,3 +18,63 @@ body{
 nav{
 	position: fixed;
 }
+
+{ font-family:Verdana, Geneva, sans-serif;
+	margin: 4px auto;
+	text-align: center;
+	padding: 4px;
+	color: #CAE5FF;
+	width: 400px;
+    background:#0E273C ;
+    display: block; 
+    align-items: center;
+	border-radius: 15px 15px 15px 15px;
+	
+}
+
+input,textarea,select{
+    background-color: #0C7C59; 
+	background: rgb(12,124,89);
+	background: linear-gradient(90deg, rgba(12,124,89,1) 0%, rgba(14,39,60,1) 33%); 
+
+}
+
+select:focus, input:focus, textarea:focus{
+    filter: drop-shadow(4px 4px 10px #9EE493);
+    color: #CAE5FF;
+    transform: scale(1.2);
+    transform: translate(0,1px, 70%);
+    
+}
+
+select:not(:focus), input:not(:focus), textarea:not(:focus){
+    filter:blur(1px);
+    
+}
+
+label{
+	text-shadow: 0 0 1em #8F7	
+}
+
+input:invalid {
+	background: pink;
+	color:black;
+}
+h2 {
+    position:sticky;
+    top: 0;
+	z-index:4;
+	text-shadow: 0 0 1em #8F7	
+  }
+
+input[type="checkbox"]:hover{
+	position: relative;
+	top: 100px;
+	transition: 0.5s all;
+}
+
+input[type="checkbox"]:checked{
+  margin-left: 25px;
+  border: 1px solid blue;
+}
+
