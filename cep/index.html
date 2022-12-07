@@ -48,14 +48,48 @@
     </div>
   </div>
 </nav>
+    </div><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo API ViaCEP</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+ 
+<body>
+    <div id="caixa">
+    <form action="#" id="formcad" >
+        <label>Nome</label>
+        <input name="name" type="text" id="nome" />
+        <label>CEP:</label>
+        <input name="cep" type="text" id="cep" minlength="8" maxlength="9"/>
+        <input type="button" value="Buscar CEP" id="btncep" onclick="buscaCEP()">
+        <p>Endereço:</p>
+        <label>Rua:</label>
+        <input name="logradouro" type="text" id="logradouro" />
+        <label>Complemento:</label>
+        <input name="complemento" type="text" id="complemento" />
+        <label>Bairro:</label>
+        <input name="bairro" type="text" id="bairro"  />
+        <label>Cidade:</label>
+        <input name="localidade" type="text" id="localidade" />
+        <label>Estado:</label>
+        <input name="uf" type="text" id="uf" size="2" />
+        <p>Contato:</p>
+        <label>Telefone:</label>
+        <input name="ddd" type="number" id="ddd" />
+        <input name="telefone" type="tel" id="telefone" placeholder="Ex:99999-9999" />
+        <input type="submit" value="Cadastrar novo" id="cadnovo">
+   
+   
+      <table id="cadastros"></table>
+ 
+    </form>
     </div>
-
-
-    <div id="corpo" class="d-flex justify-content-around h-100 align-content-center flex-wrap">
-      <a class="imagem"href="https/../lucas"><img class="img"src="lukinhas.jfif"></a>
-      <a class="imagem"href="https/../Felipe"><img class="img"src="Cristian.png"></a>
-    </div>
-
-    
+ 
 </body>
 </html>

@@ -1,0 +1,51 @@
+body {  
+    font-family: 'Nerko One', cursive;
+    background: #09253d;
+    color:#eeee;
+}
+ 
+#caixa{
+    border: 1px solid #246c2b;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color:#246c8b;
+    border-radius: 20px 20px 20px 20px;
+   
+   
+}
+ 
+form {
+    margin: auto;
+    display: grid;  /* recomendado */
+    grid-template-columns: 140px 80px 1fr 100px;
+    width: 600px;
+    column-gap: 12px;
+    row-gap: 4px;
+    padding: 15px;
+   
+   
+   
+}
+ 
+form label {
+    text-align: left;
+    padding: 5px 0;
+    align-self: center;
+   
+}
+ 
+#cadastros{
+    font-size: 15px;
+}
+ 
+ 
+p { grid-column: 2 / 5;}
+input { grid-column: 2 / 5; }
+input[type="reset"] { grid-column: 1; }
+select { grid-column: 2 / 5; }
+#btncep { grid-column: 4 / 5; }
+#cep{ grid-column: 2 / 4; }
+#ddd{ grid-column: 2 / 3; }
+#telefone{ grid-column: 3 / 5; }
